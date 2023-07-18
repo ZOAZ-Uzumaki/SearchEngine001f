@@ -1,0 +1,46 @@
+SearchEngine001f
+images
+Стовпець Тип Нуль За замовчуванням Коментарі
+id (Первинний) int Ні
+website_id int Так NULL
+image_url varchar(255) Ні
+Індекси
+Назва
+ключа Тип Унікальне Запакований Стовпець
+Кількість
+елементів Зіставлення Нуль Коментар
+PRIMARY BTREE Так Ні id 258 A Ні
+website_id BTREE Ні Ні website_id 9 A Так
+tags
+Стовпець Тип Нуль За замовчуванням Коментарі
+id (Первинний) int Ні
+website_id int Ні
+tag varchar(255) Ні
+Індекси
+Назва
+ключа Тип Унікальне Запакований Стовпець
+Кількість
+елементів Зіставлення Нуль Коментар
+PRIMARY BTREE Так Ні id 15 A Ні
+website_id BTREE Ні Ні website_id 5 A Ні
+websites
+Стовпець Тип Нуль За замовчуванням Коментарі
+id (Первинний) int Ні
+url varchar(255) Ні
+title varchar(255) Ні
+description text Ні
+18.07.23, 11:47 127.0.0.1 / 127.0.0.1 / SearchEngine001f | phpMyAdmin 5.2.0
+127.0.0.1/openserver/phpmyadmin/index.php?route=/database/data-dictionary&db=SearchEngine001f&goto=index.php%3Froute%3D%2Fdatab… 2/2
+Стовпець Тип Нуль За замовчуванням Коментарі
+date_added datetime Ні CURRENT_TIMESTAMP
+website_type enum('Certified', 'Onion Darknet') Так NULL
+short_description varchar(100) Так NULL
+image_url varchar(255) Так NULL
+search_count int Так 0
+category enum('certified', 'onion') Ні
+Індекси
+Назва
+ключа Тип Унікальне Запакований Стовпець
+Кількість
+елементів Зіставлення Нуль Коментар
+PRIMARY BTREE Так Ні id 3025 A Ні
